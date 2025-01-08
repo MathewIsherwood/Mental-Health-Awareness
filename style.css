@@ -1,3 +1,5 @@
+/* Global Styles */
+
 .card-body {
     background-color: #f8f9fa;
     border-radius: 10px;
@@ -8,3 +10,47 @@
 .card-text {
     height: 70px;
 }
+
+/* Tablet Alterations */
+
+@media (min-width: 993px) and (max-width: 1250px) {
+    .card-text {
+        height: 90px;
+    }
+
+    .card-title {
+        height: 50px;
+        text-align: center;
+    }
+
+    h5{
+        font-size: 1.5rem;
+    }
+}
+
+/* Smaller Tablet Alterations */
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .card-text {
+        height: 180px;
+    }
+
+    .card-title {
+        height: 50px;
+        text-align: center;
+    }
+
+    h5{
+        font-size: 1rem;
+        font-weight: bold;
+    }
+}
+
+/* Phone Alterations */
+
+@media (max-width: 767px) {
+    .card-text {
+        height: 70px;
+    }
+}
+
