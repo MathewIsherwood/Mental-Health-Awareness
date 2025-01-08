@@ -1,0 +1,377 @@
+<!-- External User’s Goal: The user seeks accessible, beginner-friendly information on mental health, including how to recognize common issues and manage stress, presented in a supportive and organised layout.
+Site Owner’s Goal: The site owner wants to create a welcoming webpage that provides basic mental health information using a clean and supportive design. The focus is on using HTML and CSS with Bootstrap to create a calming and well-organised user experience.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Awareness and Support</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<!--Hero Section with Positive Messaging: A Bootstrap Jumbotron with an encouraging message about mental health, using a calming colour scheme and a simple background image.-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="images\openart-image_r9eTJXs5_1736341810701_raw.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+            Mental Health Awareness
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Resources</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--Information Cards: Use Bootstrap’s card components to present mental health tips and common issues, providing a visually appealing way to organise content.-->
+    <div class="jumbotron text-center bg-light py-5">
+        <h1 class="display-4">Welcome to Mental Health Awareness</h1>
+        <p class="lead">Your mental health matters. Learn how to recognize common issues and manage stress.</p>
+        <hr class="my-4">
+    </div>
+    <div class="text-center py-5" style="background-color: #2A3F74;">
+        <h2 style="color: white; text-shadow: 2px 2px 4px black;">Explore our resources and support options to help you on your journey.</h2>
+        <h3 style="color: white;">Your mental health matters. Learn how to recognize common issues and manage stress.</h3>
+    </div>
+    
+
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="images\openart-image_ItUdUHau_1736344021331_raw.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Recognizing Anxiety</h5>
+                        <p class="card-text">Learn about the signs and symptoms of anxiety and how to manage it effectively.</p>
+                        <div class="d-flex justify-content-center">
+                            <a href="#" class="btn btn-primary">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="images\openart-image_J03MOC_0_1736344021380_raw.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Managing Stress</h5>
+                        <p class="card-text">Discover techniques to manage stress and improve your overall well-being.</p>
+                        <div class="d-flex justify-content-center">
+                            <a href="#" class="btn btn-primary">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="images\openart-image_N8WGughK_1736344020862_raw.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Understanding Depression</h5>
+                        <p class="card-text">Find out how to recognize the signs of depression and seek appropriate help.</p>
+                        <div class="d-flex justify-content-center">
+                            <a href="#" class="btn btn-primary">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="images\openart-image_zXFAaSji_1736344020933_raw.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Building Resilience</h5>
+                        <p class="card-text">Learn strategies to build resilience and cope with life's challenges.</p>
+                        <div class="d-flex justify-content-center">
+                            <a href="#" class="btn btn-primary">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--Resource Links: A grid layout for external links to mental health resources styled with Bootstrap buttons to make them stand out.-->
+<div class="container mt-5 rounded" style="padding:3em; border: 2px dashed #2A3F74;">
+    <h2 class="text-center" style="padding-bottom:1em;">External Resources</h2>
+    <div class="row">
+        <div class="col-md-2 d-flex justify-content-center mb-3">
+            <a href="https://www.mentalhealth.gov/" class="btn btn-outline-primary btn-block bg-primary text-light" target="_blank" style="width:170px">MentalHealth.gov</a>
+        </div>
+        <div class="col-md-2 d-flex justify-content-center mb-3">
+            <a href="https://www.nimh.nih.gov/" class="btn btn-outline-primary btn-block bg-primary text-light" target="_blank" style="width:170px">NIMH</a>
+        </div>
+        <div class="col-md-2 d-flex justify-content-center mb-3">
+            <a href="https://www.who.int/mental_health/en/" class="btn btn-outline-primary btn-block bg-primary text-light" target="_blank" style="width:170px">WHO Mental Health</a>
+        </div>
+        <div class="col-md-2 d-flex justify-content-center mb-3">
+            <a href="https://www.mind.org.uk/" class="btn btn-outline-primary btn-block bg-primary text-light" target="_blank" style="width:170px">Mind</a>
+        </div>
+        <div class="col-md-2 d-flex justify-content-center mb-3">
+            <a href="https://www.nhs.uk/nhs-services/mental-health-services/" class="btn btn-outline-primary btn-block bg-primary text-light" target="_blank" style="width:170px">NHS</a>
+        </div>
+        <div class="col-md-2 d-flex justify-content-center mb-3">
+            <a href="https://www.nhs.uk/every-mind-matters/mental-wellbeing-tips/top-tips-to-improve-your-mental-wellbeing/" class="btn btn-outline-primary btn-block bg-primary text-light" target="_blank" style="width:170px">Every Mind Matters</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<!--Positive Affirmations: Use Bootstrap’s text utilities to include a section with uplifting quotes or messages to encourage users. -->
+<div id="affirmationsCarousel" class="carousel slide mt-5" data-bs-ride="carousel" style="background-color: #2A3F74; color: white; padding:3em;">
+    <div class="carousel-inner text-center">
+        <div class="carousel-item active">
+            <p class="display-6">"If I cannot do great things, I can do small things in a great way."</p><p>Martin Luther King, Jr.</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"Act as if what you do makes a difference. It does." </p><p>William James, American philosopher and psychologist</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"Be the change that you wish to see in the world." </p><p>Mahatma Ghandi</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"Don't sit down and wait for the opportunities to come. Get up and make them." </p><p>Madam C.J. Walker, American entrepreneur and activist</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"Opportunity is missed by most people because it is dressed in overalls and looks like work." </p><p>Thomas Edison</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"The most difficult thing is the decision to act; the rest is merely tenacity." </p><p>Amelia Earhart</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"The bad news is time flies. The good news is you're the pilot." </p><p>Michael Altshuler, American author and motivational speaker</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"I can't change the direction of the wind, but I can adjust my sails to always reach my destination." </p><p>Jimmy Dean</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"You get what you give." </p><p>Jennifer Lopez</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"It is often the small steps, not the giant leaps, that bring about the most lasting change." </p><p>Queen Elizabeth II</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"If what you have done yesterday still looks big to you, you haven't done much today." </p><p>Mikhail Gorbachev</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"In the long run, you make your own luck </p><p> good, bad, or indifferent." </p><p>Loretta Lynn</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"If my mind can conceive it, if my heart can believe it, then I can achieve it." </p><p>Muhammad Ali</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"Believe you can and you're halfway there." </p><p>Theodore Roosevelt</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"Never limit yourself because of others’ limited imagination; never limit others because of your own limited imagination" </p><p>Mae Jemison, American engineer</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"We must believe that we are gifted for something, and that this thing, at whatever cost, must be attained." </p><p>Marie Curie, French physicist and chemist</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"The people who are crazy enough to think they can change the world are the ones who do." </p><p>Steve Jobs</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"I scorched the earth with my talent and I let my light shine." </p><p>André Leon Talley, American fashion journalist</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"Nothing is impossible. The word itself says 'I'm possible!'" </p><p>Audrey Hepburn</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"Never bend your head. Always hold it high. Look the world straight in the eye." </p><p>Helen Keller</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"Never allow a person to tell you no who doesn’t have the power to say yes." </p><p>Eleanor Roosevelt</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"It took me quite a long time to develop a voice, and now that I have it, I am not going to be silent." </p><p>Madeleine Albright, former U.S. Secretary of State</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"You are never too old to set another goal or to dream a new dream." </p><p>C.S. Lewis</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"When you have a dream, you've got to grab it and never let go." </p><p>Carol Burnett, American comedian and actress</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"Let us make our future now, and let us make our dreams tomorrow's reality." </p><p>Malala Yousafzai, Pakistani activist</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"All our dreams can come true </p><p> if we have the courage to pursue them." </p><p>Walt Disney</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"Go confidently in the direction of your dreams. Live the life you have imagined." </p><p>Henry David Thoreau</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"All dreams are within reach. All you have to do is keep moving towards them." </p><p>Viola Davis, American actress</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"Dreams don’t have to just be dreams. You can make it a reality; if you just keep pushing and keep trying, then eventually you’ll reach your goal." </p><p>Naomi Osaka, Japanese tennis player</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"Shoot for the moon. Even if you miss, you'll land among the stars." </p><p>Norman Vincent Peale, American clergyman</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"There is nothing impossible to they who will try." </p><p>Alexander the Great</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"Success is not final, failure is not fatal: it is the courage to continue that counts." </p><p>Winston Churchill</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"Champions keep playing until they get it right." </p><p>Billie Jean King, American tennis player</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"We will fail when we fail to try." </p><p>Rosa Parks</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"A person who never made a mistake never tried anything new." </p><p>Albert Einstein</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"Challenges are gifts that force us to search for a new center of gravity. Don't fight them. Just find a new way to stand." </p><p>Oprah Winfrey</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"It ain’t about how hard you hit. It’s about how hard you can get hit and keep moving forward." </p><p>Sylvester Stallone as Rocky Balboa</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"Our predecessors overcame many troubles and much suffering, but each time got back up stronger than before." </p><p>Shinzo Abe, former Prime Minister of Japan</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"I have learned not to allow rejection to move me." </p><p>Cicely Tyson, American actress</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"Just don't give up trying to do what you really want to do. Where there is love and inspiration, I don't think you can go wrong." </p><p>Ella Fitzgerald</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"It is our attitude at the beginning of a difficult task which, more than anything else, will affect its successful outcome." </p><p>William James</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"Attitude is the 'little' thing that makes a big difference." </p><p>Winston Churchill</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"Once you replace negative thoughts with positive ones, you'll start having positive results." </p><p>Willie Nelson</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"If you’re not positive energy, you’re negative energy." </p><p>Mark Cuban</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"Inspiration comes from within yourself. One has to be positive. When you're positive, good things happen." </p><p>Deep Roy, Kenyan-British actor and puppeteer</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"Optimism is a happiness magnet. If you stay positive, good things and good people will be drawn to you." </p><p>Mary Lou Retton, American gymnast</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"I don't harp on the negative because if you do, then there's no progression. There's no forward movement. You got to always look on the bright side of things, and we are in control. Like, you have control over the choices you make." </p><p>Taraji P. Henson, American actress</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"I know not all that may be coming, but be it what it will, I'll go to it laughing." </p><p>Herman Melville, author of Moby Dick</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"Where there's hope, there's life. It fills us with fresh courage and makes us strong again." </p><p>Anne Frank in The Diary of a Young Girl</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"Once you face your fear, nothing is ever as hard as you think." </p><p>Olivia Newton-John, British-Australian singer and actress</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"You’re braver than you believe, stronger than you seem, and smarter than you think." </p><p>A.A. Milne</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"You must do the things you think you cannot do." </p><p>Eleanor Roosevelt</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"The Sun himself is weak when he first rises, and gathers strength and courage as the day gets on." </p><p>Charles Dickens</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"When your dreams are bigger than the places you find yourself in, sometimes you need to seek out your own reminders that there is more. And there is always more waiting for you on the other side of fear." </p><p>Elaine Welteroth</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"Happiness is not something readymade; it comes from your own actions." </p><p>The Dalai Lama</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"You do not find the happy life. You make it." </p><p>Camilla Eyring Kimball</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"Happiness is not by chance, but by choice." </p><p>Jim Rohn</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"Happiness often sneaks in through a door you didn't know you left open." </p><p>John Barrymore</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"The miracle is not that we do this work, but that we are happy to do it." </p><p>Mother Theresa</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"Some people look for a beautiful place. Others make a place beautiful." </p><p>Hazrat Inayat Khan</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"Stay close to anything that makes you glad you are alive." </p><p>Hafez</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"For one to have complete satisfaction from flowers, you must have time to spend with them." </p><p>Grace Kelly</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"Always work hard and have fun in what you do because I think that's when you're more successful. You have to choose to do it." </p><p>Simone Biles</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"I never dreamed about success. I worked for it." </p><p>Esteé Lauder</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"Failure is the condiment that gives success its flavor." </p><p>Truman Capote</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"What's money? A man is a success if he gets up in the morning and goes to bed at night and in between does what he wants to do." </p><p>Bob Dylan</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"The best revenge is massive success." </p><p>Frank Sinatra</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"Try to be a rainbow in someone else's cloud." </p><p>Maya Angelou</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"If you want to lift yourself up, lift up someone else." </p><p>Booker T. Washington</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"We can't help everyone, but everyone can help someone." </p><p>Ronald Reagan</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"It has always been easy to hate and destroy. To build and to cherish is much more difficult." </p><p>Queen Elizabeth II</p>
+        </div>
+        <div class="carousel-item">
+            <p class="display-6">"You can't rely on how you look to sustain you, what sustains us, what is fundamentally beautiful is compassion; for yourself and your those around you." </p><p>Lupita Nyong'o</p>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#affirmationsCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#affirmationsCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+</body>
+</html>
+
+
+<!-- Gallary of smiling people, seeing happiness can reduce stress? Cut babies? Laugter? -->
