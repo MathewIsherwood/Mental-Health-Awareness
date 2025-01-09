@@ -11,6 +11,31 @@
     height: 70px;
 }
 
+h5{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+
+/* Small Screen Alterations */
+
+@media (min-width: 1251px) and (max-width: 1399px) {
+    .card-text {
+        height: 90px;
+    }
+
+    .card-title {
+        height: 50px;
+        text-align: center;
+    }
+
+    h5{
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+}
+
 /* Tablet Alterations */
 
 @media (min-width: 993px) and (max-width: 1250px) {
@@ -24,7 +49,8 @@
     }
 
     h5{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
+        font-weight: bold;
     }
 }
 
