@@ -16,6 +16,18 @@ h5{
     font-weight: bold;
 }
 
+/* Gallery */
+#photos{
+    column-gap: 0;
+}
+
+/* Larger Screen Alterations */
+@media (min-width: 1400px){
+    #photos{
+        column-count: 5;
+    }
+}
+
 
 
 /* Small Screen Alterations */
@@ -33,6 +45,12 @@ h5{
     h5{
         font-size: 1.2rem;
         font-weight: bold;
+    }
+
+    /* Gallery */
+    #photos{
+        column-count: 3;
+        column-gap: 0;
     }
 }
 
@@ -52,6 +70,12 @@ h5{
         font-size: 1.2rem;
         font-weight: bold;
     }
+
+    /* Gallery */
+    #photos{
+        column-count: 3;
+        column-gap: 0;
+    }
 }
 
 /* Smaller Tablet Alterations */
@@ -70,6 +94,12 @@ h5{
         font-size: 1rem;
         font-weight: bold;
     }
+
+    /* Gallery */
+    #photos{
+        column-count: 2;
+        column-gap: 0;
+    }
 }
 
 /* Phone Alterations */
@@ -78,5 +108,19 @@ h5{
     .card-text {
         height: 70px;
     }
+
+    #photos{
+        column-count: 1;
+        column-gap: 0;
+    }
 }
 
+/* Smiles page */
+#photos img{
+    width: 100%;
+    line-height: 1em;
+}
+
+#photos{
+    line-height: 0;
+}
