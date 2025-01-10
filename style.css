@@ -1,4 +1,22 @@
+/* Modes */
+
+.light-mode {
+    background-color: white;
+    color: black;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
 /* Global Styles */
+
+    /* Menu */
+    .leftgap{
+        margin-left: 10px;
+    }
+
 
 .card-body {
     background-color: #f8f9fa;
@@ -21,13 +39,23 @@ h5{
     column-gap: 0;
 }
 
+/* Anxiety Page */
+
+#header {
+    background-color: #2a3f74;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+}
+
 /* Larger Screen Alterations */
 @media (min-width: 1400px){
     #photos{
         column-count: 5;
     }
 }
-
 
 
 /* Small Screen Alterations */

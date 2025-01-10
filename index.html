@@ -44,6 +44,29 @@ Site Owner’s Goal: The site owner wants to create a welcoming webpage that pro
                     <a class="nav-link" href="smile.html">Smile</a>
                 </li>
             </ul>
+            <button id="lightMode" class="btn me-2 leftgap btn-primary ">Light Mode</button>
+            <button id="darkMode" class="btn btn-outline-secondary">Dark Mode</button>
+
+            <script>
+                document.getElementById('lightMode').addEventListener('click', function() {
+                    document.body.classList.remove('dark-mode');
+                    document.body.classList.add('light-mode');
+                    document.getElementById('lightMode').classList.add('btn-primary');
+                    document.getElementById('darkMode').classList.remove('btn-primary');
+                    document.getElementById('lightMode').classList.remove('btn-outline-secondary');
+                    document.getElementById('darkMode').classList.add('btn-outline-secondary');
+                });
+
+                document.getElementById('darkMode').addEventListener('click', function() {
+                    document.body.classList.remove('light-mode');
+                    document.body.classList.add('dark-mode');
+                    document.getElementById('darkMode').classList.add('btn-primary');
+                    document.getElementById('lightMode').classList.remove('btn-primary');
+                    document.getElementById('darkMode').classList.remove('btn-outline-secondary');
+                    document.getElementById('lightMode').classList.add('btn-outline-secondary');
+                });
+            </script>
+
         </div>
     </div>
 </nav>
@@ -52,7 +75,6 @@ Site Owner’s Goal: The site owner wants to create a welcoming webpage that pro
     <div class="jumbotron text-center bg-light py-5">
         <h1 class="display-4">Welcome to Mental Health Awareness</h1>
         <p class="lead">Your mental health matters. Learn how to recognize common issues and manage stress.</p>
-        <hr class="my-4">
     </div>
     <div class="text-center py-5" style="background-color: #2A3F74;">
         <h2 style="color: white; text-shadow: 2px 2px 4px black;">Explore our resources and support options to help you on your journey.</h2>
