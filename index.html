@@ -55,6 +55,7 @@ Site Owner’s Goal: The site owner wants to create a welcoming webpage that pro
                     document.getElementById('darkMode').classList.remove('btn-primary');
                     document.getElementById('lightMode').classList.remove('btn-outline-secondary');
                     document.getElementById('darkMode').classList.add('btn-outline-secondary');
+                    document.getElementById('jumbotron').classList.add('bg-light');
                 });
 
                 document.getElementById('darkMode').addEventListener('click', function() {
@@ -64,6 +65,7 @@ Site Owner’s Goal: The site owner wants to create a welcoming webpage that pro
                     document.getElementById('lightMode').classList.remove('btn-primary');
                     document.getElementById('darkMode').classList.remove('btn-outline-secondary');
                     document.getElementById('lightMode').classList.add('btn-outline-secondary');
+                    document.getElementById('jumbotron').classList.remove('bg-light');
                 });
             </script>
 
@@ -72,7 +74,7 @@ Site Owner’s Goal: The site owner wants to create a welcoming webpage that pro
 </nav>
 
 <!--Information Cards: Use Bootstrap’s card components to present mental health tips and common issues, providing a visually appealing way to organise content.-->
-    <div class="jumbotron text-center bg-light py-5">
+    <div id="jumbotron" class="jumbotron text-center bg-light py-5">
         <h1 class="display-4">Welcome to Mental Health Awareness</h1>
         <p class="lead">Your mental health matters. Learn how to recognize common issues and manage stress.</p>
     </div>
@@ -80,8 +82,6 @@ Site Owner’s Goal: The site owner wants to create a welcoming webpage that pro
         <h2 style="color: white; text-shadow: 2px 2px 4px black;">Explore our resources and support options to help you on your journey.</h2>
         <h3 style="color: white;">Your mental health matters. Learn how to recognize common issues and manage stress.</h3>
     </div>
-    
-
 
     <div class="container mt-5">
         <div class="row">
