@@ -17,6 +17,9 @@
         margin-left: 10px;
     }
 
+.current{
+    text-decoration: underline;
+}
 
 .card-body {
     background-color: #f8f9fa;

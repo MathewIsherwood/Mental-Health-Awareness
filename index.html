@@ -14,10 +14,49 @@ Site Owner’s Goal: The site owner wants to create a welcoming webpage that pro
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 <!--Hero Section with Positive Messaging: A Bootstrap Jumbotron with an encouraging message about mental health, using a calming colour scheme and a simple background image.-->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-            <img src="images\openart-image_r9eTJXs5_1736341810701_raw.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+
+<!--<script>
+    /* Dark mode and light mode functionality - Is darkmode set in browser? */
+    const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (isDarkMode) {
+        document.body.classList.add('dark-mode');
+        document.getElementById('darkMode').classList.add('btn-primary');
+        document.getElementById('lightMode').classList.add('btn-outline-secondary');
+        document.getElementById('jumbotron').classList.remove('bg-light');
+        document.getElementById('navbar').classList.add('text-light');
+        document.getElementById('navbar').classList.add('bg-dark');
+    } else {
+        /*document.body.classList.add('light-mode');
+        document.getElementById('lightMode').classList.add('btn-primary');
+        document.getElementById('darkMode').classList.add('btn-outline-secondary');
+        document.getElementById('jumbotron').classList.add('bg-light');*/
+
+        /* Dark mode and light mode functionality - What time is it? */
+        const currentHour = new Date().getHours();
+        const navbar = document.getElementById('navbar');
+        if (currentHour < 18 && currentHour > 9) {
+            document.body.classList.remove('dark-mode');
+            document.body.classList.add('light-mode');
+            document.getElementById('lightMode').classList.add('btn-primary');
+            document.getElementById('darkMode').classList.add('btn-outline-secondary');
+            document.getElementById('jumbotron').classList.add('bg-light');
+            document.getElementById('navbar').classList.add('text-dark');
+            document.getElementById('navbar').classList.add('bg-light');
+        } else {
+            document.body.classList.add('dark-mode');
+            document.getElementById('darkMode').classList.add('btn-primary');
+            document.getElementById('lightMode').classList.add('btn-outline-secondary');
+            document.getElementById('jumbotron').classList.remove('bg-light');
+            document.getElementById('navbar').classList.add('text-light');
+            document.getElementById('navbar').classList.add('bg-light');
+            document.getElementById('navbar').classList.add('bg-dark');
+        }
+    }    
+</script>-->
+<nav class="navbar navbar-expand-lg" id="navbar">
+    <div class="light-mode container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img src="images\openart-image_r9eTJXs5_1736341810701_raw.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top" id="navbar">
             Mental Health Awareness
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,7 +65,7 @@ Site Owner’s Goal: The site owner wants to create a welcoming webpage that pro
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="/">Home</a>
+                    <a class="nav-link current" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="anxiety.html">Anxiety</a>
@@ -44,7 +83,7 @@ Site Owner’s Goal: The site owner wants to create a welcoming webpage that pro
                     <a class="nav-link" href="smile.html">Smile</a>
                 </li>
             </ul>
-            <button id="lightMode" class="btn me-2 leftgap btn-primary ">Light Mode</button>
+            <button id="lightMode" class="btn me-2 leftgap btn-primary">Light Mode</button>
             <button id="darkMode" class="btn btn-outline-secondary">Dark Mode</button>
 
             <script>
@@ -56,6 +95,10 @@ Site Owner’s Goal: The site owner wants to create a welcoming webpage that pro
                     document.getElementById('lightMode').classList.remove('btn-outline-secondary');
                     document.getElementById('darkMode').classList.add('btn-outline-secondary');
                     document.getElementById('jumbotron').classList.add('bg-light');
+                    document.getElementById('navbar').classList.add('text-dark');
+                    document.getElementById('navbar').classList.remove('text-light');
+                    document.getElementById('navbar').classList.add('bg-light');
+                    document.getElementById('navbar').classList.remove('bg-dark');
                 });
 
                 document.getElementById('darkMode').addEventListener('click', function() {
@@ -66,6 +109,10 @@ Site Owner’s Goal: The site owner wants to create a welcoming webpage that pro
                     document.getElementById('darkMode').classList.remove('btn-outline-secondary');
                     document.getElementById('lightMode').classList.add('btn-outline-secondary');
                     document.getElementById('jumbotron').classList.remove('bg-light');
+                    document.getElementById('navbar').classList.add('text-light');
+                    document.getElementById('navbar').classList.remove('text-dark');
+                    document.getElementById('navbar').classList.add('bg-dark');
+                    document.getElementById('navbar').classList.remove('bg-light');
                 });
             </script>
 
@@ -74,7 +121,7 @@ Site Owner’s Goal: The site owner wants to create a welcoming webpage that pro
 </nav>
 
 <!--Information Cards: Use Bootstrap’s card components to present mental health tips and common issues, providing a visually appealing way to organise content.-->
-    <div id="jumbotron" class="jumbotron text-center bg-light py-5">
+    <div id="jumbotron" class="jumbotron text-center py-5">
         <h1 class="display-4">Welcome to Mental Health Awareness</h1>
         <p class="lead">Your mental health matters. Learn how to recognize common issues and manage stress.</p>
     </div>
