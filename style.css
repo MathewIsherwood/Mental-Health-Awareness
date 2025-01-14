@@ -12,6 +12,32 @@
 
 /* Global Styles */
 
+/* Accessibility overrides */
+.btn-outline-primary {
+    --bs-btn-bg: #0251C5 !important;
+    --bs-btn-border-color: #0251C5 !important;
+    --bs-btn-hover-bg: #0251C5 !important;
+    --bs-btn-hover-border-color: #0a58ca;
+    --bs-btn-active-bg: #0251C5 !important;
+    --bs-btn-active-border-color: #0251C5 !important;
+    --bs-btn-disabled-bg: #0251C5 !important;
+    --bs-btn-disabled-border-color: #0251C5 !important;
+}
+
+
+.btn-primary{
+    --bs-btn-bg: #0251C5 !important;
+    --bs-btn-border-color: #0251C5 !important;
+    --bs-btn-hover-bg: #0251C5 !important;
+    --bs-btn-hover-border-color: #0251C5 !important;
+    --bs-btn-active-bg: #0251C5 !important;
+    --bs-btn-active-border-color: #0251C5 !important;
+    --bs-btn-disabled-bg: #0251C5 !important;
+    --bs-btn-disabled-border-color: #0251C5 !important;
+}
+
+
+
     /* Menu */
     .leftgap{
         margin-left: 10px;
