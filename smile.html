@@ -21,7 +21,7 @@ Site Owner’s Goal: The site owner wants to create a welcoming webpage that pro
             <img src="images/openart-image_r9eTJXs5_1736341810701_raw.webp" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
             Mental Health Awareness
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" name="Navigation Toggle">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -41,12 +41,12 @@ Site Owner’s Goal: The site owner wants to create a welcoming webpage that pro
                 <li class="nav-item">
                     <a class="nav-link" href="resilience.html" alt="Resilience - Information and advise" title="Learn about Resilience">Resilience</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link current" href="smile.html" alt="Smile - Seeing people smile can help you smile" title="Look at people smile">Smile</a>
+                <li class="nav-item current">
+                    <a class="nav-link" href="smile.html" alt="Smile - Seeing people smile can help you smile" title="Look at people smile">Smile</a>
                 </li>
             </ul>
-            <button id="lightMode" class="btn me-2 leftgap btn-primary shadow-hover" name="Light Mode">Light Mode</button>
-            <button id="darkMode" class="btn btn-outline-secondary shadow-hover" name="Dark Mode">Dark Mode</button>
+            <button id="lightMode" class="btn me-2 leftgap btn-primary shadow-hover" name="Light Mode" aria-label="Light Mode">Light Mode</button>
+            <button id="darkMode" class="btn btn-outline-secondary shadow-hover" name="Dark Mode" aria-label="Dark Mode">Dark Mode</button>
 
             <script>
                 document.getElementById('lightMode').addEventListener('click', function() {

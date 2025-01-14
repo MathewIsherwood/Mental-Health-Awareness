@@ -60,7 +60,7 @@ Site Owner’s Goal: The site owner wants to create a welcoming webpage that pro
             <img src="images/openart-image_r9eTJXs5_1736341810701_raw.webp" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
             Mental Health Awareness
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" name="Navigation Toggle">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -84,8 +84,8 @@ Site Owner’s Goal: The site owner wants to create a welcoming webpage that pro
                     <a class="nav-link" href="smile.html" alt="Smile - Seeing people smile can help you smile" title="Look at people smile">Smile</a>
                 </li>
             </ul>
-            <button id="lightMode" class="btn me-2 leftgap btn-primary shadow-hover" name="Light Mode">Light Mode</button>
-            <button id="darkMode" class="btn btn-outline-secondary shadow-hover" name="Dark Mode">Dark Mode</button>
+            <button id="lightMode" class="btn me-2 leftgap btn-primary shadow-hover" name="Light Mode" aria-label="Light Mode">Light Mode</button>
+            <button id="darkMode" class="btn btn-outline-secondary shadow-hover" name="Dark Mode" aria-label="Dark Mode">Dark Mode</button>
 
             <script>
                 document.getElementById('lightMode').addEventListener('click', function() {
@@ -140,7 +140,7 @@ Site Owner’s Goal: The site owner wants to create a welcoming webpage that pro
                         <h3 class="card-title">Recognizing Anxiety</h3>
                         <p class="card-text">Learn about the signs and symptoms of anxiety and how to manage it effectively.</p>
                         <div class="d-flex justify-content-center">
-                            <a href="anxiety.html" class="btn btn-primary shadow-hover">Read more</a>
+                            <a href="anxiety.html" class="btn btn-primary shadow-hover">Help me with Anxiety</a>
                         </div>
                     </div>
                 </div>
@@ -152,7 +152,7 @@ Site Owner’s Goal: The site owner wants to create a welcoming webpage that pro
                         <h3 class="card-title">Managing Stress</h3>
                         <p class="card-text">Discover techniques to manage stress and improve your overall well-being.</p>
                         <div class="d-flex justify-content-center">
-                            <a href="stress.html" class="btn btn-primary shadow-hover">Read more</a>
+                            <a href="stress.html" class="btn btn-primary shadow-hover">Help me with Stress</a>
                         </div>
                     </div>
                 </div>
@@ -164,7 +164,7 @@ Site Owner’s Goal: The site owner wants to create a welcoming webpage that pro
                         <h3 class="card-title">Understanding Depression</h3>
                         <p class="card-text">Find out how to recognize the signs of depression and seek appropriate help.</p>
                         <div class="d-flex justify-content-center">
-                            <a href="depression.html" class="btn btn-primary shadow-hover">Read more</a>
+                            <a href="depression.html" class="btn btn-primary shadow-hover">Help me with Depression</a>
                         </div>
                     </div>
                 </div>
@@ -176,7 +176,7 @@ Site Owner’s Goal: The site owner wants to create a welcoming webpage that pro
                         <h3 class="card-title">Building Resilience</h3>
                         <p class="card-text">Learn strategies to build resilience and cope with life's challenges.</p>
                         <div class="d-flex justify-content-center">
-                            <a href="resilience.html" class="btn btn-primary shadow-hover">Read more</a>
+                            <a href="resilience.html" class="btn btn-primary shadow-hover">Help me with Resilience</a>
                         </div>
                     </div>
                 </div>
@@ -208,17 +208,6 @@ Site Owner’s Goal: The site owner wants to create a welcoming webpage that pro
         </div>
     </div>
 </div>
-
-<style>
-    .shadow-hover:hover {
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.678);
-    }
-</style>
-
-
-
-
-
 
 <!--Positive Affirmations: Use Bootstrap’s text utilities to include a section with uplifting quotes or messages to encourage users. -->
 <div id="affirmationsCarousel" class="carousel slide mt-5" data-bs-ride="carousel" style="background-color: #2A3F74; color: white; padding:3em;">
@@ -440,11 +429,11 @@ Site Owner’s Goal: The site owner wants to create a welcoming webpage that pro
             <p class="display-6">"You can't rely on how you look to sustain you, what sustains us, what is fundamentally beautiful is compassion; for yourself and your those around you." </p><p>Lupita Nyong'o</p>
         </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#affirmationsCarousel" data-bs-slide="prev">
+    <button class="carousel-control-prev" type="button" data-bs-target="#affirmationsCarousel" data-bs-slide="prev" aria-label="Previous">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#affirmationsCarousel" data-bs-slide="next">
+    <button class="carousel-control-next" type="button" data-bs-target="#affirmationsCarousel" data-bs-slide="next" aria-label="Next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
     </button>
