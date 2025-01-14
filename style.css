@@ -32,7 +32,7 @@
     height: 70px;
 }
 
-h5{
+h3{
     font-size: 1.2rem;
     font-weight: bold;
 }
@@ -73,7 +73,7 @@ h5{
         text-align: center;
     }
 
-    h5{
+    h3{
         font-size: 1.2rem;
         font-weight: bold;
     }
@@ -97,7 +97,7 @@ h5{
         text-align: center;
     }
 
-    h5{
+    h3{
         font-size: 1.2rem;
         font-weight: bold;
     }
@@ -121,7 +121,7 @@ h5{
         text-align: center;
     }
 
-    h5{
+    h3{
         font-size: 1rem;
         font-weight: bold;
     }
